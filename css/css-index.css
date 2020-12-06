@@ -2,23 +2,55 @@ body, html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #4abdac;
 }
-
-.container{
-    height: 100vh;
-    background-color: white;
-
+.container-fluid{
+    height: 100%;
+    background-color:  rgb(255, 245, 227);
 }
-
 #lista-menu{
-    display: grid;
+    flex-wrap: wrap;
+    display: flex;
     width: 100%;
     justify-content: space-around;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr
 }
-.navbar{
-    border-color: red;
-    border-width: medium;
-    border-style: solid;
+#nav{
+    display:static;
+    border-radius: 4px;
+    box-shadow: 2px 2px 12px rgb(221, 186, 121);
+    margin: 10px 20px 0px 20px ;
+    width: 100vw;
+}
+#navItemCategoria{
+    width: 180px;
+}
+.flex-item{
+    width:  180px;
+    height: 310px;
+}
+.card{
+    width: 160px;
+    height: 290px;
+    margin: 5px;
+    box-shadow: 2px 2px 8px rgb(221, 186, 121);
+}
+.btn{
+    display: block;
+}
+p{  
+    font-size: 12px;
+}
+.heading{
+    width: 100vw;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    color: #333;
+}
+hr{
+	border: 0;
+    border-top: 1px solid #333;
+    width: 80vw;
 }
